@@ -5,6 +5,15 @@
     <title>Index</title>
 </head>
 <body>
- <h1> Hello </h1>
+     <h1> Restaurant Menu</h1>
+        {% for meal in meals %}
+        <h2>{{ meal.1 }}</h2>
+        {% for row in item_list %}
+            <p>{{ row.meal }}</p>
+            <p>{{ row.description }}</p>
+        {% endfor %}
+        {% endfor %}
+
+
 </body>
 </html>
